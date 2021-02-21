@@ -4,7 +4,7 @@
 
 Install rustup and rustc
 
-    curl https://sh.rustup.rs -sSf | sh
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Upgrade
 
@@ -19,3 +19,21 @@ Compile
 Run
 
     ./hello_world
+
+## Project creation
+
+Create new project
+
+    cargo new hello-rust
+
+Run program inside project directory
+
+    cargo run
+
+Install dependencies and build project
+
+    cargo build
+
+## Links
+
+- [Getting started](https://www.rust-lang.org/learn/get-started)
