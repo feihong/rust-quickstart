@@ -9,7 +9,8 @@ fn main() {
 
   let mut v: Vec<String> = Vec::with_capacity(8);
   for _i in 0..8 {
-    v.push(rng.gen_range('\u{4e00}'..'\u{a000}').to_string());
+    let c = rng.gen_range('\u{4e00}'..'\u{a000}');
+    v.push(c.to_string());
   }
   let message = v.join(", ");
   println!("{}", message);
