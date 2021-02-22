@@ -1,0 +1,1 @@
+- Create trait for hanzi generation instead of forcing user to pass in rng struct every time
