@@ -6,8 +6,7 @@ use std::io::{stdout, BufWriter};
 // static mut RNG: rand::rngs::ThreadRng = rand::thread_rng();
 
 fn gen_hanzi(rng: &mut rand::rngs::ThreadRng) -> char {
-  // Doesn't include 0xa000
-  rng.gen_range('\u{4e00}'..'\u{a000}')
+  rng.gen_range('\u{4e00}'..='\u{9fff}')
 }
 
 fn main() {
