@@ -1,10 +1,13 @@
 # Feihong's Rust quickstart
 
-## Prerequisites
+## Installation
 
-Install rustup and rustc
+Install Rust
 
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    asdf plugin add rust
+    asdf install rust latest
+    asdf global rust latest
+    rustup --version
 
 Upgrade
 
@@ -28,6 +31,7 @@ Create new project
 
 Run program inside project directory
 
+    cd hello-rust
     cargo run
 
 Install dependencies and build project
